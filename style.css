@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.geologica {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0,
+    "SHRP" 0;
+}
+:root{
+    --geofont:"Geologica", sans-serif;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    
+    list-style: none;
+    text-decoration: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+nav{
+    margin: 0% 5%;
+    font-family: var(--geofont);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    & ul{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25em;
+        width: 100%;
+    }
+    & .link_container{
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+    }
+    & li{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: .5em;
+    }
+    .logo_nav{
+        text-align: center;
+        align-self: center;
+    }
+}
+.contact{
+    font-size: 1.3em;
+}
+.logo_nav{
+    font-size: 3em;
+}
+.bg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+    font-size: 5em;
+    text-align: center;
+    background-image: url("./img/pexels-ron-lach-8387119.jpg");
+    font-family: var(--geofont);
+    width: 100%;
+    height: 80vh;
+    & h1{
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.article{
+    align-self: center;
+    padding: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    width: 98%;
+    gap: 5em;
+    height: auto;
+
+}
+.cat{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 60px;
+    & ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0% 2%;
+        width: 10%;
+        height: 100%;
+        & li{
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+.text{
+    font-weight: bold;
+    font-family: var(--geofont);
+    font-size: large;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    & .name{
+        text-transform: uppercase;
+        text-decoration: underline solid;
+    }
+}
+.card{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0%;
+    width: 300px;
+    height: 450px;
+    &:hover .img_hover{
+        opacity: 1 !important;
+    }
+    & img{
+        border-radius:5px 5px 0 0 ;
+        object-fit: cover;
+        width: 100%;
+        height: 90%;
+    }
+
+    & .img_hover{
+        opacity: 0;
+        top: 0%;
+        left: 0;
+        position: absolute;
+        object-fit: cover;
+      
+        background-color: blue;    
+    }
+}
+
+footer{
+    background-color: beige;
+    font-family: var(--geofont);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+    & a{
+        font-size: x-large;
+        color: black;
+    }
+    & p{
+        color: rgb(81, 79, 79);
+    }
+}
