@@ -9,6 +9,13 @@
     "CRSV" 0,
     "SHRP" 0;
 }
+.smalltext{
+    
+    line-height: 1.5;
+    word-spacing: 2;
+    width: 50%;
+    font-size: small;
+}
 :root{
     --geofont:"Geologica", sans-serif;
 }
